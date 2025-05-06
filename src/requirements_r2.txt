@@ -1,0 +1,25 @@
+openai
+langchain-openai
+
+chromadb  
+#現在:chromadbのLatest version:0.6.2ですが、langchain-chromaは >=0.4.0 かつ <0.6.0
+#また以下バージョンは除外されます:0.5.10, 0.5.11, 0.5.12, 0.5.4, 0.5.5, 0.5.7, 0.5.9
+langchain-chroma
+
+langchain
+langchain-community
+langchain-core
+langchain-text-splitters
+langsmith
+streamlit
+streamlit-feedback
+
+python-dotenv==1.0.1
+
+pypdf==5.0.1
+pycryptodome==3.21.0
+
+
+# Errorにより追記。 LangChainやOpenAIのPython SDK のバージョンが 古い と、Pydantic2にまだ完全対応していないバージョンを使っていてこうなる
+# pydantic.errors.PydanticUserError: 'ChatOpenAI' is not fully defined; you should define 'BaseCache', then call 'ChatOpenAI.model_rebuild()'
+#pydantic<2.0
